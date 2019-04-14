@@ -1,10 +1,8 @@
-from sys import stdin
-
 move=[[1, 1], [1, -1], [-1, -1], [-1, 1]]
 num = int(input())
 for _ in range(num):
     N = int(input())
-    arr = [list(map(int, stdin.readline().split())) for i in range(N)]
+    arr = [list(map(int, input().split())) for i in range(N)]
  
     ans = -1
     # 초기 점 설정
